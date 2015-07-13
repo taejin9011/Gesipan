@@ -41,12 +41,12 @@ public class MemberController extends HttpServlet {
         switch (path) {
         case "/member/searchIdForm.do" :
             RequestDispatcher dispatcher3 
-            = request.getRequestDispatcher("/view/searchIdForm.jsp");
+            = request.getRequestDispatcher("/view/member/searchIdForm.jsp");
             dispatcher3.forward(request, response);
             break;
         case "/member/searchPassForm.do": 
             RequestDispatcher dispatcher4 
-            = request.getRequestDispatcher("/view/searchPassForm.jsp");
+            = request.getRequestDispatcher("/view/member/searchPassForm.jsp");
             dispatcher4.forward(request, response);
             break;
         case "/member/searchAllMembers.do": 
@@ -79,7 +79,7 @@ public class MemberController extends HttpServlet {
             
             MemberServiceImpl.getInstance().join(bean);
             RequestDispatcher dispatcher 
-                = request.getRequestDispatcher("/view/main.jsp");
+                = request.getRequestDispatcher("/view/home/main.jsp");
             dispatcher.forward(request, response);
             break;
         case "/member/login.do" : 

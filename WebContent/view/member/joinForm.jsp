@@ -1,5 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language='java' contentType='text/html; charset=UTF-8' pageEncoding='UTF-8'%>
+<%@ taglib prefix='c' uri='http://java.sun.com/jsp/jstl/core'%>
+<%@ taglib prefix='fmt' uri='http://java.sun.com/jsp/jstl/fmt'%>
+<%@ taglib prefix='fn' uri='http://java.sun.com/jsp/jstl/functions'%>
+<c:set var='context' value='<%=request.getContextPath() %>'></c:set>
 <!-- -->
     <style>
         @IMPORT url("<%=request.getContextPath()%>/css/member.css");
@@ -43,9 +46,14 @@
             <tr>
                 <td colspan="2">
                     <!-- <input type="submit" value="전 송" /> -->
-                    <img src="<%=request.getContextPath()%>/image/btnJoin.gif" 
-                            style="cursor: pointer;width: 150px;" 
+                     <div style="width:200px; margin: 0 auto;" >
+                    <img src="<%=request.getContextPath()%>/image/btnOk.jpg" 
+                             style="cursor: pointer; margin: 0 auto"
                     alt="" onclick="return Member.join()"/>
+                      <img src="${context}/image/btnNo.jpg"
+                         style="cursor: pointer;" 
+                         alt="" class="popupClose"/>
+                    </div>
                 </td>
             </tr>
         </table>
