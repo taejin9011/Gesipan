@@ -45,7 +45,7 @@
 <table width="100%" border="1" cellpadding="0" cellspacing="0">
 <tr>
     <td bgcolor="#e9e9e9">
-    방명록에 저장된 글이 없습니다.
+    방명록에 저장된 글이 없습니다.z
     </td>
 </table>
 
